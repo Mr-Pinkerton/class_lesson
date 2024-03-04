@@ -9,7 +9,7 @@ $link = mysqli_connect($server, $userName, $password, $DBName);
 
 
 $sql1 = 'SELECT * FROM `product` WHERE `price` > 4000 AND `category_id` = 4';
-$sql2 = 'SELECT `title`,`description` FROM `product` WHERE `price` < 4000 AND `category_id` != 4';
+$sql2 = 'SELECT `title`,`description`, `id` FROM `product` WHERE `price` < 4000 AND `category_id` != 4';
 $sql3 = 'UPDATE `product` SET `price` = 1500 WHERE `category_id` = 1';
 $sql4 = 'DELETE FROM `product` WHERE `category_id` = 5';
 
