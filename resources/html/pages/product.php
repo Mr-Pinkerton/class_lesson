@@ -1,0 +1,1 @@
+this is <?php echo $page->title; ?>
