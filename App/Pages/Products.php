@@ -8,5 +8,11 @@ class Products extends Page
         $this->description = 'Products Page descr';
         $this->text = '';
         $this->htmlTemplateName = 'products';
+
+        include_once('App/Models/ProductModel.php');
+        $productModel = new ProductModel();
+
+        $this->templateData['products'] = $productModel->getAllProducts();
+
     }
 }
